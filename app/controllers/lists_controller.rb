@@ -10,9 +10,6 @@ class ListsController < ApplicationController
 
   def create
     @list = List.create(list_params)
-    # @list.name = params[:list][:name]
-    # @list.save
-
     redirect_to list_url(@list)
   end
 

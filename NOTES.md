@@ -4,6 +4,8 @@
 
 # 2) Allow users to CRUD lists
 
+# 3) Add items to list
+
 [] ListsController
 #index
   - see all their lists
@@ -20,4 +22,4 @@
 
 FEATURE: CLICKING ON THE LIST
 DOES THE FEATURE IMPACT DB?  NO.
-DOES THE FEATURE IMPACT URL? Expecting:  '/lists/1' 
+DOES THE FEATURE IMPACT URL? Expecting:  '/lists/1'

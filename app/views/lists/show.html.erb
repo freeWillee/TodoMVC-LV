@@ -6,21 +6,13 @@
 
   <section class="main">
     <ul class="todo-list">
+        <% @list.items.each do |item| %>
         <li>
           <div class="view">
-            <label><a href="#">Ice cream</a></label>
+            <label><a href="#"><%=item.description%></a></label>
           </div>
         </li>
-      <li>
-        <div class="view">
-          <label><a href="#">Milk</a></label>
-        </div>
-      </li>
-      <li>
-        <div class="view">
-          <label><a href="#">Cookies</a></label>
-        </div>
-      </li>
+        <% end %>
     </ul>
   </section>
 

@@ -5,6 +5,24 @@
 # 2) Allow users to CRUD lists
 
 # 3) Add items to list
+  - Make the items in a list real
+    - a list has many items and every item belongs to a lists
+
+    lists
+    2       Shopping List
+
+    items
+    id      description   list_id
+    1           milk        2
+    1           cookies     2
+
+
+
+######   CONTINUE LECTURE MVC2 @ 18:00  
+
+
+
+  CREATE ACTION for an ITEM in a LIST - What is the URL / HTTP method for that?
 
 [] ListsController
 #index

@@ -16,6 +16,9 @@
     1           milk        2
     1           cookies     2
 
+# 4) Adding validations
+  - Validate that lists have a name
+  - Validate items have a description
 
 
 ######   CONTINUE LECTURE MVC2 @ 18:00  
@@ -23,6 +26,12 @@
 
 
   CREATE ACTION for an ITEM in a LIST - What is the URL / HTTP method for that?
+    - The form is already present in the list show page.  
+    - What URL does this imply?  Stay restful.  
+        POST /lists/:id/items=> doesn't describe which list we are adding item to?
+        An item doesn't exist in our application outside of the context of the list it belongs to.
+        NEED TO CREATE A NESTED RESOURCE:
+          - items are nested in terms of URLs under their parent list
 
 [] ListsController
 #index

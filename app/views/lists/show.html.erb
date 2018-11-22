@@ -1,7 +1,9 @@
 <section class="todoapp">
   <header class="header">
     <h1><%=@list.name%></h1>
-    <input class="new-todo" placeholder="Add an item..." autofocus="">
+    <%= form_for([@list, @item]) do |f| %>
+      <%= f.text_field :description, :class => "new-todo", :placeholder => (@item.errors.full_messages_for(:description).first || "Enter item name here...")%>
+    <% end %>
   </header>
 
   <section class="main">

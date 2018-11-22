@@ -1,9 +1,9 @@
 <section class="todoapp">
   <header class="header">
     <h1>Your Lists</h1>
-      <%= form_for(@list) do |f| %>
-        <%= f.text_field :name, :class => "new-todo" %>
-      <% end %>
+    <%= form_for([@list]) do |f| %>
+      <%= f.text_field :name, :class => "new-todo", :placeholder => (@list.errors.full_messages_for(:name).first || "Enter a list name here...")%>
+    <% end %>
   </header>
 
   <section class="main">

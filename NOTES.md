@@ -20,8 +20,32 @@
   - Validate that lists have a name
   - Validate items have a description
 
+# 5) Add state(complete, incomplete) to Items in a List
+  - Marking items as complete or incomplete.
 
-######   CONTINUE LECTURE MVC2 @ 18:00  
+  What urls do i need?
+    - the idea of an item being complete or incomplete requires data. [DEFINITE DATABASE CHANGE]
+    - new forms for updating status of an item ==> new URL
+    Potential routes (RESTFUL):
+    GET /lists/:list_id/items/:id/update
+    PUT/PATCH /lists/:list_id/items/:id
+
+    Get checkbox HTML from mvc.com
+    <input class="toggle" type="checkbox">
+
+    JS function to submit form:
+    $(function(){
+      $("input.toggle").on("change", function(){
+        $(this).parents("form").trigger("submit")
+        })
+      });
+
+  # REFACTOR 1: Start using partials in lists/show ==> getting pretty messy
+
+
+# 6) Deleting Items from a LIST
+
+
 
 
 

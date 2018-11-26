@@ -44,8 +44,16 @@
 
 # 6) Deleting Items from a LIST
 
+  -> need a new button or link to delete
+  -> needs to hit some sort of URL - look it up.
+    -> see routes
+    -> how to trigger a DELETE request?
+      -> browswers only support GET / POST
+  -> a controller action to process the deleting of the item
 
+# 7) User signup and login
 
+# 8) Users have lists and can only see their lists.
 
 
   CREATE ACTION for an ITEM in a LIST - What is the URL / HTTP method for that?
@@ -56,7 +64,7 @@
         NEED TO CREATE A NESTED RESOURCE:
           - items are nested in terms of URLs under their parent list
 
-[] ListsController
+[x] ListsController
 #index
   - see all their lists
   - doubling as my #new action in that it is presenting the person with a form to create a new list

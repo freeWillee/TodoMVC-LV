@@ -42,7 +42,6 @@
 
   # REFACTOR 1: Start using partials in lists/show ==> getting pretty messy
 
-
 # 6) Deleting Items from a LIST
 
 

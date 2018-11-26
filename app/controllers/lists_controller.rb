@@ -1,5 +1,8 @@
 class ListsController < ApplicationController
+  before_action :authentication_required
   def index
+    # if not logged in, can't see this --> back to login page.
+
     @list = List.new
     @lists = List.all
   end
@@ -20,6 +23,7 @@ class ListsController < ApplicationController
   end
 
   private
+
   def list_params # strong params
     params.require(:list).permit(:name)
   end
